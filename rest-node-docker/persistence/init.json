@@ -1,0 +1,28 @@
+[
+  {
+    "title": "Dark City",
+    "year": "1998",
+    "imdb_rating": "7.7",
+    "summary": "A man struggles with memories of his past, including a wife he cannot remember, in a nightmarish world with no sun.",
+    "notes": "My favorite movie"
+  },
+  {
+    "title": "The Fifth Element",
+    "year": "1997",
+    "imdb_rating": "7.7",
+    "summary": "In the colorful future, a cab driver unwittingly becomes the central figure in the search for a legendary cosmic weapon to keep Evil and Mr. Zorg at bay."
+  },
+  {
+    "title": "The Princess Bride",
+    "year": "1987",
+    "imdb_rating": "8.1",
+    "summary": "While home sick in bed, a young boy's grandfather reads him a story called The Princess Bride."
+  },
+  {
+    "title": "Night Watch",
+    "year": "2004",
+    "imdb_rating": "6.5",
+    "summary": "A fantasy-thriller set in present-day Moscow where the respective forces that control daytime and nighttime do battle.",
+    "notes": "The book was better"
+  }
+]
