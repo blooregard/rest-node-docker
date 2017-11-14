@@ -16,7 +16,7 @@ docker-compose build
 docker-compose up
 ```
 
-Open a browser to <a href="http://localhost:9985/movie/" target="_blank">http://localhost:9985/movie/</a>.  Only GET works currently but will add POST, PUT and DELETE at some point.
+Open a browser to http://localhost:9985/movie/.  Only GET works currently but will add POST, PUT and DELETE at some point.
 
 Shutdown in another terminal
 ```bash
