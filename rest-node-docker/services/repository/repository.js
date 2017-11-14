@@ -1,5 +1,5 @@
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost:27017/reach-engine";
+var url = "mongodb://mongodb:27017/reach-engine";
 
 class Repository {
   constructor() {
