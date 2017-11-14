@@ -1,9 +1,25 @@
-mongodb:
-  image: mongo
-  ports:
-    - "27017:27017"
+version: '2'
+services:
+  # Get the latest version of mongodb and expose its port to other containers
+  mongodb:
+    image: mongo:latest
+    container_name: "mongodb"
+    ports:
+      - "27017:27017"
+    command: mongod --smallfiles
 
-persistence:
-  build: ./persistence
-  links:
-    - mongodb
+  # Build the services and expose them while linking to the mongodb
+  rest-services:
+    build: ./services
+    ports:
+      - "9985:9985"
+    links:
+      - mongodb
+    depends_on:
+      - mongodb
+
+  # Load the initial data into mongodb
+  persistence:
+    build: ./persistence
+    links:
+      - mongodb
