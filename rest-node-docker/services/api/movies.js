@@ -7,17 +7,6 @@
 //  Adds the API to the app with the given options.
 module.exports = (app, options) => {
 
-  app.get('/movies', (req, res, next) => {
-    options.repository.getMovies().then((movies) => {
-      res.status(200).send(movies.map((movie) => { return {
-          title: movie.title,
-          imdb_rating: movie.imdb_rating
-        };
-      }));
-    })
-    .catch(next);
-  });
-
   app.get('/movie/:title', (req, res, next) => {
 
     //  Get the title.
@@ -44,4 +33,16 @@ module.exports = (app, options) => {
     })
     .catch(next);
   });
+
+    app.get('/movie', (req, res, next) => {
+      options.repository.getMovies().then((movies) => {
+        res.status(200).send(movies.map((movie) => { return {
+            title: movie.title,
+            imdb_rating: movie.imdb_rating
+          };
+        }));
+      })
+      .catch(next);
+    });
+
 };
