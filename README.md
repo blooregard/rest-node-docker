@@ -14,7 +14,11 @@ You must have Docker installed for this to work.
 cd ./rest-node-docker
 docker-compose build
 docker-compose up
+```
 
-#Shutdown in another terminal
+Open a browser to http://localhost:9985/movie/.  Only GET works currently but will add POST, PUT and DELETE at some point.
+
+Shutdown in another terminal
+```bash
 docker-compose down
 ```
